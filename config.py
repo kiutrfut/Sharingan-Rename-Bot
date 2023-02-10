@@ -4,7 +4,7 @@ class Config(object):
     # get a token from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5959482663:AAGnBMV2Rbrtr5k01AxYXrw-bRSJ9mIEjwk")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", "7068313"))
+    APP_ID = int(os.environ.get("API_ID", "7068313"))
     API_HASH = os.environ.get("API_HASH" "d7446aca34e84b8539a1a8817630d1b5")
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "cartoon_seriesz")
