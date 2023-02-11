@@ -1,3 +1,8 @@
+import pyrogram
+from pyrogram import Client
+from pyrogram import filters
+from pyrogram import enums
+from pyrogram import idle
 import logging
 import config
 logging.basicConfig(level=logging.DEBUG,
@@ -12,6 +17,14 @@ else:
     from config import Config
 
 import pyrogram
+
+# env
+bot_token = os.environ.get("TOKEN", "5562112612:AAH7Sbz2iIAdoPknjv0FnuiNbiDa_5OFYQA") 
+api_hash = os.environ.get("HASH", "8a50db8b70f8cbcbc013f013b6a58ac7") 
+api_id = os.environ.get("ID", "22931292")
+
+# bot
+app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token, in_memory=True)
 
 
 
